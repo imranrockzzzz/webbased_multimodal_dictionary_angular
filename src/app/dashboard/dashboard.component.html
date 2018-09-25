@@ -1,0 +1,63 @@
+<div class="col-12 p-0">
+  <div class="row  marginAuto">
+    <div class="col-12 mb-4 mt-4">
+      <input type="text" class="w-100 p10 inputSearch" #search placeholder="search" (keyup)="getSearch(search.value)">
+    </div>
+    <div class="my-table">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>EXPRESSIONS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of DataArr" class="tableRow">
+              <td (click)="open(content,data)">{{data.word}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<ng-template #content let-c="close" let-d="dismiss">
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">{{NameModal}}</h4>
+      <button type="button" class="btn btn-primary" (click)="c('Close click')">Back To List</button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="form-group offset-2 col-12">
+            <div class="col-12">
+              <div class="col-4"></div>
+              <div class="col-4">
+                <img src={{imgUrl}} class="img200">
+              </div>
+            </div>
+            <div class="col-12">
+                <div class="col-4"></div>
+                <div class="col-4">
+                  <img src={{gifUrl}} class="img200">
+                </div>
+              </div>
+          <div class="col-12">
+            <label class="control-label col-4">Synonym : </label>
+            <label class="control-label col-6">{{synonymModal}}</label>
+          </div>
+          <div class="col-12">
+            <label class="control-label col-4">Meaning : </label>
+            <label class="control-label col-6">{{meaningModal}}</label>
+          </div>
+          <div class="col-12">
+            <label class="control-label col-4">Example : </label>
+            <label class="control-label col-6">{{exampleModal}}</label>
+          </div>
+          <div class="col-12">
+            <iframe [attr.src]="showPreview(VideoModal)" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- <div class="modal-footer">
+      
+    </div> -->
+  </ng-template>

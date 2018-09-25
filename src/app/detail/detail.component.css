@@ -1,0 +1,53 @@
+.marginAuto{
+    margin: 0 auto;
+}
+label{
+    vertical-align: top;
+}
+a{
+    word-wrap: break-word;
+}
+.img200{
+    height: 200px;
+    width: 200px;;
+}
+.p10{
+    padding: 10px 10px !important;
+}
+body{
+    overflow: visible;
+}
+iframe{
+    width: 100%;
+}
+.imgSrc,.gifSrc{
+	position: relative;
+	width: 80%;
+	transition: transform .2s;
+}
+/* hover effect */
+.imgSrc:hover,.gifSrc:hover {
+	cursor: pointer;
+	-ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}   
+footer{
+	background: #e0e0e0;
+    padding: 10px 10px;
+    text-align: right;
+}
+.btn-back{
+    padding: 5px;
+    font-size: 14px;
+    background: #7171f7;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    cursor: pointer;
+    word-wrap: break-word;
+}

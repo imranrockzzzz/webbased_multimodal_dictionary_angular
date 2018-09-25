@@ -1,0 +1,37 @@
+<div class="col-12">
+  <div class="row mt-3">
+    <h4 class="modal-title col-4" id="modal-basic-title">{{NameModal}}</h4>
+    <button type="button" class="btn btn-back" (click)="close('Close click')">Back To List</button>
+  </div>
+</div>
+<hr>
+<div class="col-10 col-lg-9 col-xl-8 offset-lg-2 offset-xl-2 offset-1">
+  <div class="col-12">
+          <div class="row">
+              <div class="col-12 col-lg-4 col-xl-4">
+                <h4>IMAGE</h4>
+                <img src={{imgUrl}} class="img200 imgSrc">
+              </div>
+              <div class="col-12 col-lg-4 col-xl-4">
+                  <h4>GIF</h4>
+                <img src={{gifUrl}} class="img200 gifSrc">
+              </div>
+          </div>
+    <div class="col-12 mt-2">
+      <label class="control-label col-4">Synonym : </label>
+      <label class="control-label col-6">{{synonymModal}}</label>
+    </div>
+    <div class="col-12">
+      <label class="control-label col-4">Meaning : </label>
+      <label class="control-label col-6">{{meaningModal}}</label>
+    </div>
+    <div class="col-12">
+      <label class="control-label col-4">Example : </label>
+      <label class="control-label col-6">{{exampleModal}}</label>
+    </div>
+    <div class="col-12">
+      <iframe [attr.src]="showPreview(VideoModal)" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+<footer>© Copyright Reserved</footer>

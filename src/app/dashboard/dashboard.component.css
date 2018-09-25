@@ -1,0 +1,50 @@
+.marginAuto{
+    margin: 0 auto;
+}
+label{
+    vertical-align: top;
+}
+a{
+    word-wrap: break-word;
+}
+.img200{
+    height: 200px;
+    width: 200px;;
+}
+.p10{
+    padding: 10px 10px !important;
+}
+.my-table{
+    height: 100%;
+    overflow-y: auto;
+    width: 100%;
+}
+.inputSearch{
+    border-radius: 25px;
+    border: 1px solid #7d7a7a;
+}
+.inputSearch:focus{
+	outline: 0px;
+}
+.tableRow:hover {
+    -ms-zoom: 2.0;
+    -webkit-zoom: 2.0;
+    zoom : 2.0;
+    cursor: pointer;
+}
+table{
+    /* background:
+    url('/assets/img/bg.jpg') */
+    background: black;
+}
+table thead tr th{
+    background: #dee2e6;
+}
+table tbody tr td{
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+/* table tbody tr td:hover{
+    color: black;
+} */

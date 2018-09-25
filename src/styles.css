@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+.modal-backdrop {
+    background-color: white;
+ }
+ .modal-backdrop.show {
+    opacity: 1;
+}
+.modal-dialog{
+    max-width: 100% !important;
+    margin: 0;
+}
+.modal-content{
+    border: 0px;
+}
+.my-table{
+    height: 100%;
+    overflow-y: auto;
+    width: 100%;
+}
+body{
+    color : black;
+}
